@@ -1,0 +1,266 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .left-text
+{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.nav-bar .left-text img
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.nav-bar .left-text p {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
+
+.nav-bar .right-text ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-bar .right-text ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-bar .right-text ul li a:hover {
+  color: #007bff;
+}
+
+/* Section Styling */
+section {
+  padding: 80px 20px 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Homepage Intro */
+/* .home-page {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.home-page .intro-line h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home-page .dev-img img {
+  max-width: 100%;
+  height: auto;
+} */
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+  gap: 100px;
+}
+
+.intro-line {
+  flex: 1; 
+  font-family: 'Lobster', cursive; 
+  font-size: 50px; 
+  color: #333;
+  text-align: center;
+  position: relative;
+
+}
+.intro-line::before {
+  content: "“"; /* Opening double quote */
+  font-size: 28px; /* Adjust size for the quotes */
+  margin-right: 5px; /* Add spacing between quote and text */
+}
+
+.intro-line::after {
+  content: "”"; /* Closing double quote */
+  font-size: 28px; /* Adjust size for the quotes */
+  margin-left: 5px; /* Add spacing between text and quote */
+}
+
+.dev-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Project Section */
+.project-section .heading p,
+.certifications-content .heading p,
+.experience-content .heading p,
+.skills-section .heading p,
+.about-section .heading p,
+.contact-section .heading p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.c-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #0056b3;
+}
+
+/* Certifications */
+.gallery {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.gallery .desc {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Experience Section */
+.box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.box .box-content {
+  font-size: 1rem;
+}
+
+.box button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.box button:hover {
+  background: #0056b3;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+  max-width: 600px;
+}
+
+.name-tag {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
